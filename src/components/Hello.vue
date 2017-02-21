@@ -27,6 +27,17 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  beforeRouteEnter (to, from, next) {
+    console.log('组件内的钩子')
+    next()
+  },
+  beforeRouteLeave (to, from, next) {
+    if (confirm('确定离开吗？')) {
+      next()
+    } else {
+      next(false)
+    }
   }
 }
 </script>
