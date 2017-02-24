@@ -10,3 +10,47 @@ body {
   height: 100%;
 }
 
+// 动画定义
+.transition-group {
+  position: relative;
+}
+.tab-enter {
+  // transform: translateX(-320px);
+  transition: 0.5s;
+}
+.tab-enter-active {
+  transition: 0.5s;
+}
+.tab-leave {
+  // opacity: 0;
+}
+.tab-leave-active {
+  // position: absolute;
+  // top: 0;
+  // width: 100%;
+  // z-index: -1;
+  // transform: translateX(320px);
+  // transition: 0.5s;
+}
+.tab-move {
+  transition: 1s;
+}
+.tab-enter-to {
+  // transition: 1s;
+}
+// .slide-enter, .slide-leave-active {
+//   transition: 0.5s
+// }
+// .slide-leave, .slide-leave-active {
+//   transition: 0.5s
+// }
+// .slide-move {
+//   transition: transform 1s;
+// }
+
+.custom-appear-class {
+  background: green;
+}
+.custom-appear-active-class {
+  transition: background 1s;
+}
