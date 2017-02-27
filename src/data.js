@@ -11,6 +11,8 @@ export let robots = [
     name: '塞巴斯塔',
     HP: 4000,
     EN: 140,
+    flexibility: 110,
+    armour: 1200,
     move: 7,
     orientation: ['A', 'A', 'B', 'A'], // 地形适应能力，对应 空、陆、海、宇
     weapons: [
@@ -39,6 +41,8 @@ export let robots = [
     name: '高达Z',
     HP: 3800,
     EN: 160,
+    flexibility: 120,
+    armour: 900,
     move: 6,
     orientation: ['D', 'A', 'C', 'A'], // 地形适应能力，对应 空、陆、海、宇
     weapons: [
@@ -58,7 +62,52 @@ export let robots = [
   }
 ]
 
-export let position = [
-  [3, 5],
-  [4, 7]
+export let positions = [
+  {x: 3, y: 4},
+  {x: 4, y: 7}
+]
+
+export let drivers = [
+  {
+    icon: '',
+    name: '孙可可',
+    LV: 1,
+    exp: 0,
+    spirit: {
+      content: ['不屈', '加速', '集中', '热血', '觉醒', '爱'],
+      SP: 80,
+      discount: 1
+    },
+    parameter: [133, 135, 145, 198, 186, 220], // 格斗，射击，防御，回避，命中，技量
+    abilities: [
+      {
+        name: 'NT',
+        LV: 1
+      },
+      {
+        name: '强运'
+      }
+    ]
+  },
+  {
+    icon: '',
+    name: 'jack',
+    LV: 1,
+    exp: 0,
+    spirit: {
+      content: ['不屈', '加速', '集中', '热血', '觉醒', '爱'],
+      SP: 80,
+      discount: 1
+    },
+    parameter: [133, 135, 145, 198, 186, 220], // 格斗，射击，防御，回避，命中，技量
+    abilities: [
+      {
+        name: 'NT',
+        LV: 1
+      },
+      {
+        name: '强运'
+      }
+    ]
+  }
 ]
