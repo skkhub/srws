@@ -1,5 +1,5 @@
 <template>
-  <div class="chapter">
+  <div class="chapter" @click.self="chapterClick">
     <chapter-map></chapter-map>
     <chapter-robot v-for="(robot, i) in robots" :robot="robot" :position="positions[i]" :driver="drivers[i]"></chapter-robot>
     <chapter-controller v-show="openCtrl" :status="status"></chapter-controller>
@@ -25,7 +25,9 @@ export default {
     }
   },
   methods: {
-
+    chapterClick ($event) {
+      this.openCtrl = false
+    }
   },
   mounted () {
     this.$root.store.$on('openController', (status) => {

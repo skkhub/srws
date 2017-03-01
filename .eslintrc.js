@@ -33,6 +33,8 @@ module.exports = {
     "one-var": 0,
     "object-property-newline": 0,
     // else 是否可以换行
-    "brace-style": 0
+    "brace-style": 0,
+    // 空格可以存在2个以上
+    "no-multi-spaces": 0
   }
 }
