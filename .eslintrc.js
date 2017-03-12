@@ -26,7 +26,7 @@ module.exports = {
     'quotes': 0,
     // 允许匿名new对象
     'no-new': 0,
-    "no-unused-vars": [1, { "vars": "all", "args": "none" }],
+    "no-unused-vars": [0, { "vars": "all", "args": "none" }],
     "no-useless-constructor": 0,
     "no-trailing-spaces": 0,
     "padded-blocks": 0,
@@ -35,6 +35,8 @@ module.exports = {
     // else 是否可以换行
     "brace-style": 0,
     // 空格可以存在2个以上
-    "no-multi-spaces": 0
+    "no-multi-spaces": 0,
+    "comma-dangle": 0,
+    "semi": 0
   }
 }

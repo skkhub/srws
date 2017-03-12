@@ -2,7 +2,7 @@
   <div class="chapter" @click.self="chapterClick">
     <chapter-map></chapter-map>
     <chapter-robot v-for="(robot, i) in robots" :robot="robot" :position="positions[i]" :driver="drivers[i]"></chapter-robot>
-    <chapter-controller v-show="openCtrl" :status="status"></chapter-controller>
+    <chapter-controller v-if="openCtrl" :status="status"></chapter-controller>
     </h1>章节篇<h1>
   </div>
 </template>
